@@ -23,14 +23,15 @@ inputs:
     description: |-
       Version of the gcloud SDK to install. If unspecified or set to "latest",
       the latest available gcloud SDK version for the target platform will be
-      installed. Example: "286.0.0".
+      installed. Example: "290.0.1".
     default: latest
     required: false
 
   service_account_email:
     description: |-
-      Service account email address to use for authentication. This is usually
-      of the format <name>@<project-id>.iam.gserviceaccount.com.
+      Service account email address to use for authentication. This is required
+      for legacy .p12 keys but can be omitted for .json keys. This is usually of
+      the format <name>@<project-id>.iam.gserviceaccount.com.
     required: false
 
   service_account_key:
